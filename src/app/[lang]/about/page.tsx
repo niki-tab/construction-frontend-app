@@ -4,11 +4,10 @@ import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <div className="h-dvh">
+    <div>
       <Header>
 
     </Header>
-
       <Footer>
 
       </Footer>
