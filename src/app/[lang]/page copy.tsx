@@ -8,14 +8,14 @@ import Link from 'next/link';
 export default function HomeLangPage({ params }: { params: { lang: string } }) {
   const lang = params.lang;
   return (
-    <div className="h-dvh">
+    <div>
       <Header>
 
-    </Header>
-  
+      </Header>
       <Footer lang={lang}>
   
       </Footer>
+      <Link href={`/${lang}/about`}>Go to about</Link>
     </div>
   );
 }
