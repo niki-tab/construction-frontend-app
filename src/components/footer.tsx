@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Footer({ lang }:{ lang: string; }){
 
     return (
-    <div className="absolute inset-x-0 bottom-0 h-48 bg-slate-100 grid grid-cols-4 gap-4">
+    <div className="inset-x-0 bottom-0 h-48 bg-slate-100 grid grid-cols-4 gap-4 relative bottom-0">
         <div className="flex justify-center items-center"> 
             <Image src={`/images/common/rock-logo.png`} alt="Logo" width="156" height="156" />
         </div>
