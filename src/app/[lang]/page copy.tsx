@@ -9,7 +9,7 @@ export default function HomeLangPage({ params }: { params: { lang: string } }) {
   const lang = params.lang;
   return (
     <div>
-      <Header>
+      <Header lang={lang}>
 
       </Header>
       <Footer lang={lang}>
