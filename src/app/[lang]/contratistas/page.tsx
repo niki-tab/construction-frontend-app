@@ -7,7 +7,7 @@ export default function ContractorsPage({ params }: { params: { lang: string } }
   return (
     <div>
       Contractor
-      <Header>
+      <Header lang={lang}>
 
     </Header>
     <Footer lang={lang}>
