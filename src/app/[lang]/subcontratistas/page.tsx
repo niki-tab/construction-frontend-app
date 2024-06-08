@@ -9,7 +9,7 @@ export default function SubcontractorsPage({ params }: { params: { lang: string 
       <Header lang={lang}>
 
       </Header>
-      <iframe aria-label='Registro' frameborder="0" scrolling="no" style={{ height: '950px', width: '99%', border: 'none', overflow: 'hidden'}} src='https://forms.zohopublic.eu/nicolastabarestech/form/ContractorsLeadGenerationForm/formperma/sX62lkC9fxWYvXd8s55hJDKKMThgH4k0jIAxfugbXfQ'></iframe>
+      <iframe aria-label='Registro' style={{ height: '950px', width: '99%', border: 'none', overflow: 'hidden'}} src='https://forms.zohopublic.eu/nicolastabarestech/form/ContractorsLeadGenerationForm/formperma/sX62lkC9fxWYvXd8s55hJDKKMThgH4k0jIAxfugbXfQ'></iframe>
       <Footer lang={lang}>
   
       </Footer>
