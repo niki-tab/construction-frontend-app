@@ -1,21 +1,21 @@
+import Image from 'next/image'
+
 export default function Header({ lang }:{ lang: string; }){
 
     return (
         
-        <div className="fixed h-20 bg-white grid grid-cols-3 gap-3 border-t-0 border-l-0 border-r-0 border-b-2 border-solid border-strong-green">
+        <div className="fixed top-0 left-0 h-20 w-full bg-white grid grid-cols-3 gap-3 border-t-0 border-l-0 border-r-0 border-b-2 border-solid border-corporate-blue">
             <div className="flex items-center justify-center">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    LOGO
-                </button>
+                    <Image src={`/images/common/ConnectObra.png`} alt="Logo" width="156" height="156" />
             </div>
             <div className="">
 
             </div>
             <div className="grid gap-20 grid-cols-2 grid-rows-1 items-center">
-                <button className="h-12 bg-strong-green hover:bg-white text-white hover:text-strong-green py-2 px-4 rounded font-bold">
+                <button className="h-10 bg-corporate-orange hover:bg-corporate-blue text-white hover:text-white py-2 rounded font-medium ml-8">
                     Buscar contratos
                 </button>
-                <button className="h-12 bg-strong-green hover:bg-white text-white hover:text-strong-green py-2 px-4 rounded font-bold mr-8">
+                <button className="h-10 bg-corporate-orange hover:bg-corporate-blue text-white hover:text-white py-2 rounded font-medium mr-8">
                     Publicar contratos
                 </button>
             </div>

@@ -15,6 +15,10 @@ const config: Config = {
       },
       colors: {
         'strong-green': '#003300',
+        'corporate-blue': '#2B577C',
+        'corporate-orange': '#DF6227',
+        'corporate-black': '#3F4053',
+        
       },
     },
   },
