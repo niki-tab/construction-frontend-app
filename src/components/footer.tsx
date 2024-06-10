@@ -17,7 +17,7 @@ export default function Footer({ lang }:{ lang: string; }){
         <div className="text-center">
             <p className="text-xl font-mono text-corporate-blue font-bold text-left pt-4 ml-28">Más información</p>
             <p className="text-base font-mono pt-2 text-left ml-28 hover:underline"><Link href={`/${lang}/subcontratistas`}>Para Subcontratistas</Link></p>
-            <p className="text-base font-mono text-left ml-28 hover:underline"><Link href={`/${lang}/contratistas`}>Para Para Contratistas</Link></p>
+            <p className="text-base font-mono text-left ml-28 hover:underline"><Link href={`/${lang}/contratistas`}>Para Contratistas</Link></p>
         </div>
         <div className="text-center">
             <p className="text-xl font-mono text-corporate-blue font-bold text-left pt-4 ml-28">Contacto</p>

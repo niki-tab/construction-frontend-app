@@ -13,7 +13,7 @@ export default function HomeLangPage({ params }: { params: { lang: string } }) {
 
     </Header>
     <div className="h-full w-full bg-white pt-12">
-      <div className="grid gap-2 grid-cols-2 grid-rows-1 my-20 mx-28">
+      <div className="grid gap-10 grid-cols-2 grid-rows-1 my-20 ml-28">
       <div>
         <h1 className="inline-block w-full font-mono font-bold text-6xl text-corporate-black">
           Encuentra encargos de talleres artesanales y afrontadlos conjuntamente
@@ -25,16 +25,16 @@ export default function HomeLangPage({ params }: { params: { lang: string } }) {
         En Cocrafter, negocios verificados colaboran para encargos. La búsqueda de pedidos en el sector artesanal hecha fácil. La gestión de subcontratistas aún más simple.
         </p>
         <div className="grid gap-20 grid-cols-2 grid-rows-1 items-center mt-8">
-                <button className="h-10 bg-corporate-orange text-white hover:text-white py-2 rounded font-medium">
-                    Buscar contrato
-                </button>
-                <button className="h-10 bg-corporate-blue text-white hover:text-white py-2 rounded font-medium">
-                    Publicar contrato
-                </button>
+          <button className="h-10 bg-corporate-orange text-white hover:text-white py-2 rounded font-medium">
+            <Link href={`/${lang}/subcontratistas`}>Buscar contrato</Link>
+          </button>
+          <button className="h-10 bg-corporate-blue text-white hover:text-white py-2 rounded font-medium">
+            <Link href={`/${lang}/contratistas`}>Publicar contrato</Link>
+          </button>
         </div>
       </div>
-        <div>
-        <Image src={`/images/home-page/gettyimages-1332558192-612x612.jpg`} alt="Construction workers" width="1200" height="624" />
+        <div className="flex items-center justify-center mr-16">
+        <Image className="rounded-full" src={`/images/home-page/home-page-image-1.jpg`} alt="Construction workers" width="1200" height="624" />
         </div>
       </div>
     </div>
