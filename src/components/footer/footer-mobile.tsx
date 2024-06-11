@@ -17,8 +17,8 @@ export default function FooterDesktop({ lang }:{ lang: string; }){
             </div>
             <div className="">
                 <p className="text-xs font-mono text-corporate-blue font-bold text-left">Más información</p>
-                <p className="text-xs font-mono pt-2 text-left hover:underline"><Link href={`/${lang}/subcontratistas`}>Para Subcontratistas</Link></p>
-                <p className="text-xs font-mono pt-1 text-left hover:underline"><Link href={`/${lang}/contratistas`}>Para Contratistas</Link></p>
+                <p className="text-xs font-mono pt-2 text-left hover:underline"><Link href={`/${lang}/subcontratistas`}>Subcontratistas</Link></p>
+                <p className="text-xs font-mono pt-1 text-left hover:underline"><Link href={`/${lang}/contratistas`}>Contratistas</Link></p>
             </div>
             <div className="">
                 <p className="text-xs font-mono text-corporate-blue font-bold text-left">Sobre nosotros</p>
