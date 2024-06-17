@@ -1,0 +1,33 @@
+{
+  "id": "test_button",
+  "type": "SharedSlice",
+  "name": "TestButton",
+  "description": "TestButton",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "prueba_1": {
+          "type": "Text",
+          "config": {
+            "label": "prueba 1",
+            "placeholder": ""
+          }
+        },
+        "prueba2": {
+          "type": "Text",
+          "config": {
+            "label": "prueba2",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

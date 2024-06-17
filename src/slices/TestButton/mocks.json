@@ -1,0 +1,19 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"prueba_1": {
+				"__TYPE__": "FieldContent",
+				"value": "pig",
+				"type": "Text"
+			},
+			"prueba2": {
+				"__TYPE__": "FieldContent",
+				"value": "ocean",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
