@@ -13,7 +13,7 @@ export default function SubcontractorsPage({ params }: { params: { lang: string 
       <HeaderMobile lang={lang}>
       </HeaderMobile>
       <div className="h-full w-full bg-white pt-12 hidden md:block">
-      <form name="contact" method="POST" netlify>
+      <form name="contact" method="POST" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
