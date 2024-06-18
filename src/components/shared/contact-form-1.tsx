@@ -67,8 +67,7 @@ export default function ContactForm1() {
         <br />
       </p>
       <p>
-        <Button type="submit" className="mt-4 bg-secondary-brand-color hover:bg-primary-brand-color">Enviar
-        </Button>
+        <button type="submit">Enviar</button>
       </p>
     </form>
     </div>
