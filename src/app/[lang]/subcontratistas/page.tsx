@@ -8,12 +8,12 @@ import ContactForm1 from "@/components/shared/contact-form-1";
 export default function SubcontractorsPage({ params }: { params: { lang: string } }) {
   const lang = params.lang;
   return (
-    <div className="h-dvh">
+    <div className="flex flex-col min-h-screen">
     <HeaderDesktop lang={lang}>
     </HeaderDesktop>
     <HeaderMobile lang={lang}>
     </HeaderMobile>
-    <div className="h-full w-full bg-white pt-12 hidden md:block mt-12 text-center">
+    <div className="flex-grow w-full bg-white pt-12 hidden md:block mt-12">
     <ContactForm1/>
     </div>
     <FooterDesktop lang={lang}>
