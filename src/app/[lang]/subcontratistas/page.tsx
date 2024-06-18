@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import FooterDesktop from "@/components/footer/footer-desktop";
 import FooterMobile from "@/components/footer/footer-mobile";

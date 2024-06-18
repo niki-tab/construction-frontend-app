@@ -1,3 +1,5 @@
+"use client"
+
 export default function ContactForm1() {
     return (
       <form name="contact" method="POST" data-netlify="true">
