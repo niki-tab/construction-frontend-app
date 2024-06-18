@@ -21,6 +21,7 @@ export default function ContactForm1() {
     }
   };
   return (
+    <div className="bg-slate-100 w-1/2 m-auto p-5">
     <form name="contact" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
       <p>
@@ -56,5 +57,6 @@ export default function ContactForm1() {
         <button type="submit">Send</button>
       </p>
     </form>
+    </div>
   );
 }
