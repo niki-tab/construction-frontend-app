@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function ContactForm1() {
   const handleSubmit = async (e: any) => {
@@ -64,6 +65,10 @@ export default function ContactForm1() {
           placeholder="Escribe el nombre de tu empresa"
           id="form-telephone"
         />
+        <br />
+      </p>
+      <p>
+        <Input name="test" type="text" placeholder="test" />
         <br />
       </p>
       <p>
