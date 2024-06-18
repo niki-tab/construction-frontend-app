@@ -1,5 +1,7 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+
 export default function ContactForm1() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -21,40 +23,52 @@ export default function ContactForm1() {
     }
   };
   return (
-    <div className="bg-slate-100 w-1/2 m-auto p-5">
+    <div className="bg-slate-100 w-1/2 m-auto p-5 rounded-lg">
     <form name="contact" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
       <p>
-        <label htmlFor="yourname">Your Name:</label>
+        <label htmlFor="form-name">Nombre:</label>
         <input
           type="text"
           name="name"
-          placeholder="Enter your name"
-          id="yourname"
+          placeholder="Escribe tu nombre"
+          id="form-name"
         />
         <br />
       </p>
       <p>
-        <label htmlFor="youremail">Your Email:</label>
+        <label htmlFor="form-email">Email:</label>
         <input
           type="email"
           name="email"
-          placeholder="Enter your email"
-          id="youremail"
+          placeholder="Escribe tu email"
+          id="form-email"
         />
         <br />
       </p>
       <p>
-        <label htmlFor="yourmessage">Message:</label>
-        <textarea
-          name="message"
-          placeholder="Enter your message"
-          id="yourmessage"
-        ></textarea>
+        <label htmlFor="form-company">Nombre empresa:</label>
+        <input
+          type="text"
+          name="company"
+          placeholder="Escribe el nombre de tu empresa"
+          id="form-company"
+        />
         <br />
       </p>
       <p>
-        <button type="submit">Send</button>
+        <label htmlFor="form-telephone">Teléfono:</label>
+        <input
+          type="text"
+          name="phone"
+          placeholder="Escribe el nombre de tu empresa"
+          id="form-telephone"
+        />
+        <br />
+      </p>
+      <p>
+        <Button type="submit" className="mt-4 bg-secondary-brand-color hover:bg-primary-brand-color">Enviar
+        </Button>
       </p>
     </form>
     </div>
