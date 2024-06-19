@@ -26,8 +26,8 @@ export default function ContactFormContractors() {
   };
   return (
     <div className="bg-slate-100 w-2/5 p-5 rounded-lg">
-    <form name="Subcontractor Form" onSubmit={handleSubmit}>
-      <input type="hidden" name="form-name" value="Subcontractor Form" />
+    <form name="Contractor Form" onSubmit={handleSubmit}>
+      <input type="hidden" name="form-name" value="Contractor Form" />
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
         <Label className="font-mono font-bold" htmlFor="name">Nombre:</Label>
         <Input className="font-mono" id="form-name" name="name" type="text" placeholder="Escribe tu nombre" />
