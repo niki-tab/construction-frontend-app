@@ -13,7 +13,7 @@ export default function SubcontractorsPage({ params }: { params: { lang: string 
     </HeaderDesktop>
     <HeaderMobile lang={lang}>
     </HeaderMobile>
-    <div className="flex-grow w-full bg-white pt-12 hidden md:block mt-12">
+    <div className="flex flex-grow items-center content-center justify-center mt-20">
     <ContactForm1/>
     </div>
     <FooterDesktop lang={lang}>

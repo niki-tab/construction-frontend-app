@@ -25,23 +25,23 @@ export default function ContactForm1() {
     }
   };
   return (
-    <div className="bg-slate-100 w-2/5 m-auto p-5 rounded-lg">
+    <div className="bg-slate-100 w-2/5 p-5 rounded-lg">
     <form name="contact" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
-        <Label className="font-mono" htmlFor="name">Nombre:</Label>
+        <Label className="font-mono font-bold" htmlFor="name">Nombre:</Label>
         <Input className="font-mono" id="form-name" name="name" type="text" placeholder="Escribe tu nombre" />
       </div>
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
-        <Label className="font-mono" htmlFor="email">Email:</Label>
+        <Label className="font-mono font-bold" htmlFor="email">Email:</Label>
         <Input className="font-mono" id="form-email" name="email" type="email" placeholder="Escribe tu email" />
       </div>
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
-        <Label className="font-mono" htmlFor="company">Nombre empresa:</Label>
+        <Label className="font-mono font-bold" htmlFor="company">Nombre empresa:</Label>
         <Input className="font-mono" id="form-company" name="company" type="text" placeholder="Escribe el nombre de tu empresa" />
         </div>
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
-        <Label className="font-mono" htmlFor="telephone">Teléfono:</Label>
+        <Label className="font-mono font-bold" htmlFor="telephone">Teléfono:</Label>
         <Input className="font-mono" id="form-telephone" name="telephone" type="text" placeholder="Escribe el nombre de tu empresa" />
       </div>
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
