@@ -10,6 +10,7 @@ export default function ContactForm1() {
     try {
       const myForm = e.target;
       const formData = new FormData(myForm);
+      console.log(new URLSearchParams(formData as any).toString());
       const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -46,6 +47,7 @@ export default function ContactForm1() {
       </div>
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
         <button type="submit">Enviar</button>
+        <Button type="submit">Enviar</Button>
       </div>
     </form>
     </div>
