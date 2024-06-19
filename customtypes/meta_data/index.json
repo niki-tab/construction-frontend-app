@@ -1,0 +1,25 @@
+{
+  "format": "custom",
+  "id": "meta_data",
+  "label": "Meta data",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "hero_section",
+  "type": "SharedSlice",
+  "name": "HeroSection",
+  "description": "HeroSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "hero_title": {
+          "type": "Text",
+          "config": {
+            "label": "Hero Title",
+            "placeholder": ""
+          }
+        },
+        "hero_medium_title": {
+          "type": "Text",
+          "config": {
+            "label": "Hero medium title",
+            "placeholder": ""
+          }
+        },
+        "hero_image": {
+          "type": "Image",
+          "config": {
+            "label": "Hero Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "hero_description": {
+          "type": "Text",
+          "config": {
+            "label": "Hero description",
+            "placeholder": ""
+          }
+        },
+        "buttons": {
+          "type": "Group",
+          "config": {
+            "label": "Buttons",
+            "repeat": true,
+            "fields": {
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label",
+                  "placeholder": ""
+                }
+              },
+              "color": {
+                "type": "Text",
+                "config": {
+                  "label": "Color",
+                  "placeholder": ""
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "Slug",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

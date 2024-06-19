@@ -1,0 +1,81 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"hero_medium_title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "De artesano a artesano"
+			},
+			"hero_image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+					"width": 4000,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+				"width": 4000,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"hero_description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "En Cocrafter, negocios verificados colaboran para encargos. La búsqueda de pedidos en el sector artesanal hecha fácil. La gestión de subcontratistas aún más simple."
+			},
+			"hero_title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Encuentra encargos de talleres artesanales y afrontadlos conjuntamente"
+			},
+			"buttons": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"label",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "language",
+									"type": "Text"
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "human",
+									"type": "Text"
+								}
+							],
+							[
+								"slug",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "general",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

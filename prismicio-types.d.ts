@@ -69,6 +69,114 @@ export type BlogPost2Document<Lang extends string = string> =
     Lang
   >;
 
+type HomepageDocumentDataSlicesSlice = HeroSectionSlice;
+
+/**
+ * Content for Homepage documents
+ */
+interface HomepageDocumentData {
+  /**
+   * Slice Zone field in *Homepage*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<HomepageDocumentDataSlicesSlice> /**
+   * Meta Description field in *Homepage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: homepage.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Homepage*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Homepage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: homepage.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Homepage document from Prismic
+ *
+ * - **API ID**: `homepage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type HomepageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<HomepageDocumentData>,
+    "homepage",
+    Lang
+  >;
+
+/**
+ * Content for Meta data documents
+ */
+interface MetaDataDocumentData {
+  /**
+   * Title field in *Meta data*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: meta_data.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Description field in *Meta data*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: meta_data.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+}
+
+/**
+ * Meta data document from Prismic
+ *
+ * - **API ID**: `meta_data`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type MetaDataDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<MetaDataDocumentData>,
+    "meta_data",
+    Lang
+  >;
+
 type Test1DocumentDataSlicesSlice = TestButtonSlice;
 
 /**
@@ -204,6 +312,8 @@ export type Test2Document<Lang extends string = string> =
 
 export type AllDocumentTypes =
   | BlogPost2Document
+  | HomepageDocument
+  | MetaDataDocument
   | Test1Document
   | Test2Document;
 
@@ -363,6 +473,128 @@ export type CallToActionSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Item in *HeroSection → Default → Primary → Buttons*
+ */
+export interface HeroSectionSliceDefaultPrimaryButtonsItem {
+  /**
+   * Label field in *HeroSection → Default → Primary → Buttons*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_section.default.primary.buttons[].label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+
+  /**
+   * Color field in *HeroSection → Default → Primary → Buttons*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_section.default.primary.buttons[].color
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  color: prismic.KeyTextField;
+
+  /**
+   * Slug field in *HeroSection → Default → Primary → Buttons*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_section.default.primary.buttons[].slug
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  slug: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *HeroSection → Default → Primary*
+ */
+export interface HeroSectionSliceDefaultPrimary {
+  /**
+   * Hero Title field in *HeroSection → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_section.default.primary.hero_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_title: prismic.KeyTextField;
+
+  /**
+   * Hero medium title field in *HeroSection → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_section.default.primary.hero_medium_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_medium_title: prismic.KeyTextField;
+
+  /**
+   * Hero Image field in *HeroSection → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_section.default.primary.hero_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  hero_image: prismic.ImageField<never>;
+
+  /**
+   * Hero description field in *HeroSection → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_section.default.primary.hero_description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_description: prismic.KeyTextField;
+
+  /**
+   * Buttons field in *HeroSection → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_section.default.primary.buttons[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  buttons: prismic.GroupField<
+    Simplify<HeroSectionSliceDefaultPrimaryButtonsItem>
+  >;
+}
+
+/**
+ * Default variation for HeroSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroSectionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<HeroSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *HeroSection*
+ */
+type HeroSectionSliceVariation = HeroSectionSliceDefault;
+
+/**
+ * HeroSection Shared Slice
+ *
+ * - **API ID**: `hero_section`
+ * - **Description**: HeroSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroSectionSlice = prismic.SharedSlice<
+  "hero_section",
+  HeroSectionSliceVariation
+>;
+
+/**
  * Default variation for Test2 Slice
  *
  * - **API ID**: `default`
@@ -517,6 +749,11 @@ declare module "@prismicio/client" {
       BlogPost2Document,
       BlogPost2DocumentData,
       BlogPost2DocumentDataSlicesSlice,
+      HomepageDocument,
+      HomepageDocumentData,
+      HomepageDocumentDataSlicesSlice,
+      MetaDataDocument,
+      MetaDataDocumentData,
       Test1Document,
       Test1DocumentData,
       Test1DocumentDataSlicesSlice,
@@ -530,6 +767,11 @@ declare module "@prismicio/client" {
       CallToActionSliceVariation,
       CallToActionSliceDefault,
       CallToActionSliceAlignLeft,
+      HeroSectionSlice,
+      HeroSectionSliceDefaultPrimaryButtonsItem,
+      HeroSectionSliceDefaultPrimary,
+      HeroSectionSliceVariation,
+      HeroSectionSliceDefault,
       Test2Slice,
       Test2SliceVariation,
       Test2SliceDefault,
