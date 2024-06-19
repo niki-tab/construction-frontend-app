@@ -26,7 +26,7 @@ export default function ContactForm1() {
   };
   return (
     <div className="bg-slate-100 w-2/5 p-5 rounded-lg">
-    <form name="contact" onSubmit={handleSubmit}>
+    <form name="Subcontractor Form" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
         <Label className="font-mono font-bold" htmlFor="name">Nombre:</Label>
