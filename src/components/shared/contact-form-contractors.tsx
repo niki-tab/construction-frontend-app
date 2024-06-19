@@ -25,7 +25,7 @@ export default function ContactFormContractors() {
     }
   };
   return (
-    <div className="bg-slate-100 w-2/5 p-5 rounded-lg">
+    <div className="bg-slate-100 w-3/4 md:w-2/5 p-5 rounded-lg mb-20 md:mb-0">
     <form name="Contractor Form" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="Contractor Form" />
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
@@ -42,7 +42,7 @@ export default function ContactFormContractors() {
         </div>
       <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
         <Label className="font-mono font-bold" htmlFor="telephone">Teléfono:</Label>
-        <Input className="font-mono" id="form-telephone" name="telephone" type="text" placeholder="Escribe el nombre de tu empresa" />
+        <Input className="font-mono" id="form-telephone" name="telephone" type="text" placeholder="Escribe tú número de teléfono" />
       </div>
       <div className="flex flex-col items-center w-full max-w-sm items-center gap-1.5 m-auto py-4">
         <Button type="submit" className="bg-secondary-brand-color hover:bg-primary-brand-color w-1/2">Enviar</Button>

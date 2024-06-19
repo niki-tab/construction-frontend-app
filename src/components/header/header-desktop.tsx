@@ -14,8 +14,8 @@ export default function HeaderDesktop({ lang }:{ lang: string; }){
 
             </div>
             <div className="grid gap-20 grid-cols-2 grid-rows-1 items-center">
-                <Button className="ml-8 bg-primary-brand-color hover:bg-secondary-brand-color"><Link href={`/${lang}/subcontratistas`}>Buscar contratos</Link></Button>
-                <Button className="mr-8 bg-primary-brand-color hover:bg-secondary-brand-color"><Link href={`/${lang}/contratistas`}>Publicar contratos</Link></Button>
+                <Link href={`/${lang}/subcontratistas`}><Button className="ml-8 bg-primary-brand-color hover:bg-secondary-brand-color">Buscar contratos</Button></Link>
+                <Link href={`/${lang}/contratistas`}><Button className="mr-8 bg-primary-brand-color hover:bg-secondary-brand-color">Publicar contratos</Button></Link>
             </div>
         </div>
           

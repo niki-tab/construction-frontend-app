@@ -21,8 +21,8 @@ export default function HeaderMobile ({ lang }:{ lang: string; }){
                 <DropdownMenu>
                     <DropdownMenuTrigger><Image src={`/images/common/hamburger-menu.png`} alt="hamburguer menu" width="30" height="30" /></DropdownMenuTrigger>
                     <DropdownMenuContent>
-                        <DropdownMenuItem><Link href={`/${lang}/subcontratistas`}>Buscar contratos</Link></DropdownMenuItem>
-                        <DropdownMenuItem><Link href={`/${lang}/contratistas`}>Publicar contratos</Link></DropdownMenuItem>
+                        <Link href={`/${lang}/subcontratistas`}><DropdownMenuItem>Buscar contratos</DropdownMenuItem></Link>
+                        <Link href={`/${lang}/contratistas`}><DropdownMenuItem>Publicar contratos</DropdownMenuItem></Link>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
