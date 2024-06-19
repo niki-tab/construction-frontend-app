@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-export default function ContactForm1() {
+export default function ContactFormSubcontractors() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
