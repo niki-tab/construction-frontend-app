@@ -10,7 +10,6 @@ export default function ContactForm1() {
     try {
       const myForm = e.target;
       const formData = new FormData(myForm);
-      console.log(new URLSearchParams(formData as any).toString());
       const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -45,9 +44,8 @@ export default function ContactForm1() {
         <Label className="font-mono font-bold" htmlFor="telephone">Teléfono:</Label>
         <Input className="font-mono" id="form-telephone" name="telephone" type="text" placeholder="Escribe el nombre de tu empresa" />
       </div>
-      <div className="grid w-full max-w-sm items-center gap-1.5 m-auto py-2">
-        <button type="submit">Enviar</button>
-        <Button type="submit">Enviar</Button>
+      <div className="flex flex-col items-center w-full max-w-sm items-center gap-1.5 m-auto py-4">
+        <Button type="submit" className="bg-secondary-brand-color hover:bg-primary-brand-color w-1/2">Enviar</Button>
       </div>
     </form>
     </div>
