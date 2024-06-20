@@ -1,10 +1,15 @@
 "use client";
 
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import React, { useState } from 'react';
 
 export default function ContactFormSubcontractors() {
+
+  const [success, setSuccess] = useState(false);
+  
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
@@ -45,7 +50,13 @@ export default function ContactFormSubcontractors() {
         <Input className="font-mono" id="form-telephone" name="telephone" type="text" placeholder="Escribe tú número de teléfono" />
       </div>
       <div className="flex flex-col items-center w-full max-w-sm items-center gap-1.5 m-auto py-4">
-        <Button type="submit" className="bg-secondary-brand-color hover:bg-primary-brand-color w-1/2">Enviar</Button>
+        {!success && <Button type="submit" className="bg-secondary-brand-color hover:bg-primary-brand-color w-1/2">Enviar</Button>}
+        {success && <Alert className="border-green-500 bg-green-100">
+            <AlertTitle className="text-green-700">¡Gracias!</AlertTitle>
+            <AlertDescription className="text-green-700">
+              Pronto nos pondremos en contacto contigo.
+            </AlertDescription>
+          </Alert>}
       </div>
     </form>
     </div>
