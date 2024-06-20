@@ -17,12 +17,8 @@ export default async function HomeLangPage({
   const slices = page.data.slices;
   const heroSlice = slices.find((slice) => slice.slice_type === "hero_section");
   return (
-    <div className="h-lvh bg-white">
-      <HeaderDesktop lang={lang}></HeaderDesktop>
-      <HeaderMobile lang={lang}></HeaderMobile>
+
       <HeroSection slice={heroSlice} lang={lang} />
-      <FooterDesktop lang={lang}></FooterDesktop>
-      <FooterMobile lang={lang}></FooterMobile>
-    </div>
+
   );
 }
