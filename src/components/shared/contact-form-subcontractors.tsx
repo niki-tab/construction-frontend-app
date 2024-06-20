@@ -52,8 +52,8 @@ export default function ContactFormSubcontractors() {
       <div className="flex flex-col items-center w-full max-w-sm items-center gap-1.5 m-auto py-4">
         {!success && <Button type="submit" className="bg-secondary-brand-color hover:bg-primary-brand-color w-1/2">Enviar</Button>}
         {success && <Alert className="border-green-500 bg-green-100">
-            <AlertTitle className="text-green-700">¡Gracias!</AlertTitle>
-            <AlertDescription className="text-green-700">
+            <AlertTitle className="font-mono text-green-700">¡Gracias!</AlertTitle>
+            <AlertDescription className="font-mono text-green-700">
               Pronto nos pondremos en contacto contigo.
             </AlertDescription>
           </Alert>}
