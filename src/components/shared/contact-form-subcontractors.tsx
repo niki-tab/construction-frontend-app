@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 export default function ContactFormSubcontractors() {
 
   const [success, setSuccess] = useState(false);
-  
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
@@ -21,7 +21,7 @@ export default function ContactFormSubcontractors() {
         body: new URLSearchParams(formData as any).toString(),
       });
       if (res.status === 200) {
-        alert("Message sent successfully");
+        setSuccess(true);
       } else {
         alert(`${res.status} ${res.statusText}`);
       }
