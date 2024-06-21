@@ -7,7 +7,7 @@ export default function FooterDesktop({ lang }:{ lang: string; }){
     return (
     <div className="h-40 w-full block md:hidden bg-slate-100 p-4">
         <div className = "">
-            <Image src={`/images/common/ConnectObra.png`} alt="Logo" width="115" height="115" />
+            <Image src={`/images/common/logo-obranet-medium.png`} alt="Logo" width="115" height="115" />
         </div>
         <div className="relative left-0 inset-x-0 bg-slate-100 grid grid-cols-3 gap-2 py-2">
             <div className="ml-2">

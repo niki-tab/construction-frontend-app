@@ -7,7 +7,7 @@ export default function FooterDesktop({ lang }:{ lang: string; }){
     return (
     <div className="hidden md:grid relative left-0 inset-x-0 h-48 bg-slate-100 grid-cols-4 gap-4">
         <div className="flex justify-center items-center"> 
-        <Image src={`/images/common/ConnectObra.png`} alt="Logo" width="186" height="156" />
+        <Image src={`/images/common/logo-obranet-medium.png`} alt="Logo" width="186" height="156" />
         </div>
         <div className="text-center">
             <p className="text-xl font-mono text-corporate-blue font-bold text-left pt-4 ml-28">Sobre nosotros</p>
