@@ -7,7 +7,7 @@ export default function LandingSimpleGridContainer({ lang, marginTop }:{ lang: s
 
     const cardsInfo = [
         { id: 1, name: 'Electricidad', imagePath: '/images/home-page/servicio-yeso-2.jpg'}, 
-        { id: 2, name: 'Paneles de yeso', imagePath: '/images/home-page/servicio-yeso-2.jpg'}, 
+        { id: 2, name: 'Yeso', imagePath: '/images/home-page/servicio-yeso-2.jpg'}, 
         { id: 3, name: 'Ingeniería civil', imagePath: '/images/home-page/servicio-yeso-2.jpg'}, 
         { id: 4, name: 'HVAC y saneamiento', imagePath: '/images/home-page/servicio-yeso-2.jpg'}, 
         { id: 5, name: 'Obra estructural', imagePath: '/images/home-page/servicio-yeso-2.jpg'}, 
@@ -19,7 +19,7 @@ export default function LandingSimpleGridContainer({ lang, marginTop }:{ lang: s
             {cardsInfo.map((item) => (
 
                 <div className="text-center">
-                    <h3 className="font-mono font-bold text-2xl">{item.name}</h3>
+                    <h3 className="font-mono font-bold text-1xl md:text-2xl">{item.name}</h3>
                     <Link href={`/${lang}/subcontratistas`}>
                         <Image className="mt-2 mx-auto" src={`${item.imagePath}`} alt="Logo" width="208" height="208" />
                         <div className="bg-primary-brand-color text-white font-mono font-bold h-8 leading-8 w-52 mx-auto">Encargos</div>
