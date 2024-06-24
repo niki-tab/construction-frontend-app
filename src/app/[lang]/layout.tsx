@@ -20,7 +20,7 @@ export default function MainLayout({
                 </HeaderDesktop>
                 <HeaderMobile lang={lang}>
                 </HeaderMobile>
-                <div className="flex flex-grow items-center content-center justify-center pt-32">
+                <div className="flex flex-grow items-center content-center justify-center pt-8 md:pt-32">
                     {children}
                 </div>
                 <FooterDesktop lang={lang}>
