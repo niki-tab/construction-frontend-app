@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function FooterDesktop({ lang }:{ lang: string; }){
 
     return (
-    <div className="hidden md:grid relative left-0 inset-x-0 h-48 bg-slate-100 grid-cols-4 gap-4">
+    <div className="hidden md:grid relative left-0 inset-x-0 h-48 bg-slate-100 grid-cols-4 gap-4 mt-12">
         <div className="flex justify-center items-center"> 
         <Image src={`/images/common/logo-obranet-medium.png`} alt="Logo" width="186" height="156" />
         </div>
