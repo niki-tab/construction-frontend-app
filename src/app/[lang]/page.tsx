@@ -8,6 +8,7 @@ import LandingCenteredTitles2 from "@/components/landing/landing-centered-tittle
 import LandingCenteredTitles3 from "@/components/landing/landing-centered-tittles-3";
 import LandingSimpleGridContainer from "@/components/landing/landing-simple-grid-container";
 import LandingInfoImageAnd2ButtonsContainer from "@/components/landing/landing-info-image-and-2-buttons";
+import LandingHorizontalScrollGridContainer from "@/components/landing/landing-horizontal-scroll-grid-container";
 
 export default async function HomeLangPage({
   params,
@@ -23,6 +24,13 @@ export default async function HomeLangPage({
     <div>
       <div className="bg-white pb-12">
         <LandingInfoImageAnd2ButtonsContainer lang="en" mainTitleValue ="Hola" secondaryTitleValue ="Hola" imagePath="/images/home-page/home-page-image-1.jpg"></LandingInfoImageAnd2ButtonsContainer>
+      </div>
+      <div className="bg-slate-100 py-12">
+        <LandingCenteredTitles2 titleValue = "Proyectos disponibles en ObraNet"></LandingCenteredTitles2>
+        <LandingHorizontalScrollGridContainer lang="en" marginTop = "mt-12" gridColumns = "md:grid-cols-5" spaceSeparatorCards="4"></LandingHorizontalScrollGridContainer>
+      </div>
+      <div className="bg-white h-32">
+
       </div>
       <div className="bg-slate-100 py-12">
         <LandingCenteredTitles2 titleValue = "Oficios demandados por subcontratistas y contratantes"></LandingCenteredTitles2>
